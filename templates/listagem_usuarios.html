@@ -1,0 +1,18 @@
+<div class="container">
+    <table>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>email</th>
+            <th>number phone</th>   
+        </tr>
+        {% for user in users %}
+        <tr>
+            <td>{{ user.id_usuario }}</td>
+            <td>{{ user.firstname }}</td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.number }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
